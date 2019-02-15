@@ -46,7 +46,37 @@
 
 #1st commit
 
+-generated a dashboard component in a 'components' directory;
+#it will hold all the other components and the UI;
+#'ng g c components/dashboard --skipTests=true'
 
+-added a basic UI in the dashboard component;
+-uninstalled jquery and popper js and removed their styles/scripts from angular.json;
+#'npm uninstall jquery popper.js' (and remove their scripts from angular.json)
+-install ng-bootstrap
+#'npm i @ng-bootstrap/ng-bootstrap'
+-import the main ng-botostrap module in the app.module.ts
+#'import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+-add the directive to the imports array[]
+#imports: [NgbModule, ...],
+-added tooltip on the buttons for task and sticky;
+see how:
+https://ng-bootstrap.github.io/#/components/tooltip/examples
+
+-added click event on add sticky button (function still only logs 'adding sticky');
+-added similar click event on add task btn (function logs 'adding task');
+
+-generated a tasks and a stickies component (which will hold the tasks and the stickies);
+#ng g c components/tasks --skipTests=true
+#ng g c components/stickies --skipTests=true
+
+
+-merged ui testing branch with master
+
+Links:
+
+https://fullstack-developer.academy/add-bootstrap-to-an-angular-application/
+#2nd commit
 
 ####' to do
 
@@ -58,14 +88,18 @@ create branch for testing
 -added font awesome as dependency;
 
 
-;
-#2nd commit 'added bootstrap, JQ, Popper.JS, Font-Awesome'
+
 
 
 -created a ui-prototype-branch to experiment with the UI;
+
 -created a mock ui;
 -pushed 2nd branch to git branch;
+
 -added notes to master branch;
+
+
+
 
 
 ToDO:
@@ -75,20 +109,40 @@ ToDO:
 
 
 
-#GIT Commands
+#
+
+
+
+GIT Commands
 
 -git pull --rebase origin master  (syncs local repo with remote)
+
 -git push origin master
 
+
+
 Create a new branch:
+
 git checkout -b feature_branch_name
+
+
 Edit, add and commit your files.
+
 Push your branch to the remote repository:
+
 git push -u origin feature_branch_name
+
+
 
 links:
 
 https://gist.github.com/hofmannsven/6814451
+
+
 https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
+
+
+
+
 
 git remote add origin https://github.com/StanciuDragosIoan/Angular-Dashboard-App.git
