@@ -111,7 +111,7 @@ git pull origin master
 git merge test
 git push origin master
 
-#note when using simply 'git push' it pushes onto the working branch;
+#note when using simply 'git push' it pushes onto the working branch (be it master or other);
 
 
 #link to add remote origin onto local machine
