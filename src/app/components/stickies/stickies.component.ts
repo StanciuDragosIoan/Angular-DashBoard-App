@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stickies.component.css']
 })
 export class StickiesComponent implements OnInit {
-
+   
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,19 @@
 .btn-light:hover{
     cursor:pointer;
 }
+
+#dashboardMenu{
+    margin-top:8rem;
+    width:5rem;
+}
+
+#dashboardMenu .btn{
+    width:3rem;
+    margin-left:-1.7rem;
+}
+
+ 
+
+#dashboardContainer{
+    margin-right:1rem;
+}
