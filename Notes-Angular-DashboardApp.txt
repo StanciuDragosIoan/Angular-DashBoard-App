@@ -3,66 +3,58 @@
 
 
 -generated the app 'ng new dashboardapp' with routing and default CSS styling
-
 -created new repo github
 -added remote origin
-
 -pushed to github;
+
 -added bootstrap 4 as dev dependency;
 #ran 'npm install bootstrap --save' (this installs the module)
-
-
-
 #added the bootstrap array to the styles decorator in the angular.json file
-
 'node_modules/bootstrap/dist/css/bootstrap.min.css'
-
 #added bootstrap JS as script in the agnular.json
-
 'node_modules/bootstrap/dist/js/bootstrap.min.js'
 
 -added JQ and Popper
-
 #ran 'npm install jquery popper.js --save'
-
 #added the scripts to angular.json
 "scripts": 
-
 [
  "node_modules/jquery/dist/jquery.min.js",
-
-  "node_modules/popper.js/dist/umd/popper.js",
-  
-  "node_modules/bootstrap/dist/js/bootstrap.min.js"
-   
+  "node_modules/popper.js/dist/umd/popper.js", 
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"  
 ]
 
-#ran 'npm install font-awesome --save'
 
+-added font-awesome
+#ran 'npm install font-awesome --save'
 #added font awesome styles as stylesheet in the styles array in angular.json
 'node_modules/font-awesome/css/font-awesome.css'
 
 
+##### made the 1st commit
 
-#1st commit
+
+-created a test branch called 'ui-prototype' to test UI and components structure;
 
 -generated a dashboard component in a 'components' directory;
 #it will hold all the other components and the UI;
 #'ng g c components/dashboard --skipTests=true'
 
--added a basic UI in the dashboard component;
+-added a basic UI in the dashboard component (2 buttons on a sticky side-menu);
 -uninstalled jquery and popper js and removed their styles/scripts from angular.json;
 #'npm uninstall jquery popper.js' (and remove their scripts from angular.json)
--install ng-bootstrap
+
+-installed  ng-bootstrap
 #'npm i @ng-bootstrap/ng-bootstrap'
 -import the main ng-botostrap module in the app.module.ts
 #'import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 -add the directive to the imports array[]
 #imports: [NgbModule, ...],
 -added tooltip on the buttons for task and sticky;
-see how:
+see how in the documentation below:
 https://ng-bootstrap.github.io/#/components/tooltip/examples
 
+-re-installed JQ and popper JS and added them in angular.json (had error in console when using tooltip without them);
 -added click event on add sticky button (function still only logs 'adding sticky');
 -added similar click event on add task btn (function logs 'adding task');
 
@@ -70,69 +62,49 @@ https://ng-bootstrap.github.io/#/components/tooltip/examples
 #ng g c components/tasks --skipTests=true
 #ng g c components/stickies --skipTests=true
 
-
 -merged ui testing branch with master
 
-Links:
+##### made the 2nd commit (had 2 or 3 more 'testing' commits);
+
+
+
+
+
+###########################Links##########################:
 
 https://fullstack-developer.academy/add-bootstrap-to-an-angular-application/
-#2nd commit
 
-####' to do
+https://gist.github.com/hofmannsven/6814451
 
-create branch for testing
-
-
-
--tested with live serve
--added font awesome as dependency;
+https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
 
 
 
 
+#########################' to do next
 
--created a ui-prototype-branch to experiment with the UI;
-
--created a mock ui;
--pushed 2nd branch to git branch;
-
--added notes to master branch;
+-define components structure and overall app work;
 
 
 
 
-
-ToDO:
-
--design UI and generate components
-
-
-
-
-#
-
-
-
-GIT Commands
+#####################################GIT Commands########################
 
 -git pull --rebase origin master  (syncs local repo with remote)
+-git push -u origin master (pushes onto master branch)
+-git commit -m 'commit text' (commits)
 
--git push origin master
 
 
-
-Create a new branch:
-
+###how to create a new branch:
 git checkout -b feature_branch_name
 
-
 Edit, add and commit your files.
-
 Push your branch to the remote repository:
 
 git push -u origin feature_branch_name
 
-HOW TO merge testing branch into master branch:
+#####HOW TO merge testing branch into master branch:
 
 git checkout master
 git pull origin master
@@ -141,15 +113,6 @@ git push origin master
 
 #note when using simply 'git push' it pushes onto the working branch;
 
-links:
 
-https://gist.github.com/hofmannsven/6814451
-
-
-https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
-
-
-
-
-
+#link to add remote origin onto local machine
 git remote add origin https://github.com/StanciuDragosIoan/Angular-Dashboard-App.git
