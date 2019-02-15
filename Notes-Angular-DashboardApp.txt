@@ -139,6 +139,8 @@ git pull origin master
 git merge test
 git push origin master
 
+#note when using simply 'git push' it pushes onto the working branch;
+
 links:
 
 https://gist.github.com/hofmannsven/6814451
