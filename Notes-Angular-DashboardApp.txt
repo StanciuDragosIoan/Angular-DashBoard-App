@@ -67,7 +67,7 @@ https://ng-bootstrap.github.io/#/components/tooltip/examples
 ##### made the 2nd commit (had 2 or 3 more 'testing' commits);
 
 -defined the UI of the dashbaord component a bit better;
--nested sitckies component into dashbaord component;
+-nested sitckies component into dashboard component;
 
 
 
