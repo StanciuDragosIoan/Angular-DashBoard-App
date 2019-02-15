@@ -1,0 +1,94 @@
+15 Feb:
+
+
+
+-generated the app 'ng new dashboardapp' with routing and default CSS styling
+
+-created new repo github
+-added remote origin
+
+-pushed to github;
+-added bootstrap 4 as dev dependency;
+#ran 'npm install bootstrap --save' (this installs the module)
+
+
+
+#added the bootstrap array to the styles decorator in the angular.json file
+
+'node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+#added bootstrap JS as script in the agnular.json
+
+'node_modules/bootstrap/dist/js/bootstrap.min.js'
+
+-added JQ and Popper
+
+#ran 'npm install jquery popper.js --save'
+
+#added the scripts to angular.json
+"scripts": 
+
+[
+ "node_modules/jquery/dist/jquery.min.js",
+
+  "node_modules/popper.js/dist/umd/popper.js",
+  
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+   
+]
+
+#ran 'npm install font-awesome --save'
+
+#added font awesome styles as stylesheet in the styles array in angular.json
+'node_modules/font-awesome/css/font-awesome.css'
+
+
+
+#1st commit
+
+
+
+####' to do
+
+create branch for testing
+
+
+
+-tested with live serve
+-added font awesome as dependency;
+
+
+;
+#2nd commit 'added bootstrap, JQ, Popper.JS, Font-Awesome'
+
+
+-created a ui-prototype-branch to experiment with the UI;
+-created a mock ui;
+-pushed 2nd branch to git branch;
+-added notes to master branch;
+
+
+ToDO:
+
+-design UI and generate components
+
+
+
+
+#GIT Commands
+
+-git pull --rebase origin master  (syncs local repo with remote)
+-git push origin master
+
+Create a new branch:
+git checkout -b feature_branch_name
+Edit, add and commit your files.
+Push your branch to the remote repository:
+git push -u origin feature_branch_name
+
+links:
+
+https://gist.github.com/hofmannsven/6814451
+https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
+
+git remote add origin https://github.com/StanciuDragosIoan/Angular-Dashboard-App.git
