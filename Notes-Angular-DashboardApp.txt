@@ -73,11 +73,40 @@ https://ng-bootstrap.github.io/#/components/tooltip/examples
 
 
 
+#in the dashboard.ts
+-I defined a sticky in the dashboard.ts {} 
+-it has 3 properties (title, body and completed);
 
+#in the stickies.ts
+-I defined a 'stickies' property in the class and assigned Sticky[]; to it;
 
+#in the app folder create a 'models' folder (this will hold the interfaces for todo and sticky);
+-in the modles folder create the interface for the sticky (a Sticky.ts file) and put all the properties of the sticky in there;
 
+export class Sticky {
+    id: number;
+    title: string;
+    body: string;
+    completed: boolean;
+}
+
+-import the Sticky interface into the stikcies.ts;
+
+import { Sticky } from '../../models/Sticky';
 ########app development notes to continue from above here !!!
 
+#in the stickies.ts
+-add the array of stickies in the ngOnInit();
+
+ this.stickies = [
+      {
+        id:1,
+        title: 'Test Sticky',
+        body: 'Test sticky body...',
+        completed: false
+      } 
+
+##left at min 32
 
 
 ###########################Links##########################:
