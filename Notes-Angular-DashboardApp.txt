@@ -101,12 +101,75 @@ import { Sticky } from '../../models/Sticky';
  this.stickies = [
       {
         id:1,
-        title: 'Test Sticky',
-        body: 'Test sticky body...',
+        title: 'Test Sticky 1',
+        body: 'Test sticky 1 body...',
         completed: false
-      } 
+      },
 
-##left at min 32
+      {
+        id:2,
+        title: 'Test Sticky 2',
+        body: 'Test sticky 2 body...',
+        completed: true
+      },
+
+      {
+        id:3,
+        title: 'Test Sticky 3',
+        body: 'Test sticky 3 body...',
+        completed: false
+      }
+    ]
+
+-next I will add the stickies to the html template;
+-open stickies.html;
+-I will loop through the stickies with an ngFor dirrective (which is line an html attribute, see syntax in html template):
+-in the stickies.component.html I set up the ngFor directive:
+
+<div class="row mr-5">
+    <div *ngFor="let sticky of stickies" class="bg-warning p-2 col-sm-12 col-md-6 col-lg-4 stickies-container">
+        <div class="bg-light">{{ sticky.title }}</div>  <div class=" bg-info">{{ sticky.body }}</div>        
+    </div>
+</div> 
+-next I will generate a sticky component (I want each sticky itself to be a component);
+$ng g c components/StickyItem;
+
+-add the model (the interface)
+import { Sticky } from 'src/app/models/Sticky';
+
+
+-replace the div with the ngFor directive with an app-sticky-item tag (using the selectory from the newly generated component) and pass in 'sticky' as a property:
+
+<app-sticky-item *ngFor="let sticky of stickies" [sticky]="sticky">
+
+</app-sticky-item>
+ 
+-this gives an error as 'sticky' is not a known property of the sticky-item component;
+-go to sticky-item component .ts;
+*when we pass in something like [sticky]="sticky", it has to be passed in as input;
+-in the sticky-item.ts add Input in the inport from @angular/core;
+import { Component, OnInit, Input } from '@angular/core';
+-in the class create an input property with @input;
+ @Input() sticky: Sticky;
+-replace the html template of sticky-item component with the actual content of the sticky;
+-added medi query for the sticky component in its CSS file;
+-go to styles.css (apply general styles to the app);
+-added a reset at the top;
+-added font;
+-added an input type checkbox in the sticky.html above the card header;
+-added a .del class button in the sticky component.html;
+-added custom style to the sticky component (created a delete button);
+-added .is-complete class (to be used for the completed stickies/tasks);
+*is complete class will be added when the completed property of the sticky component is true;
+-will use ngClasses directive in the sticky-item.html
+[ngClass]="setClasses()"
+-created the setClasses method in the sticky-component.ts;
+*this dynamically adds the class of is-completed to an item (implemented only for stickies) if the item is completed (in the properties of the TS object);
+
+
+
+
+##left at min 41
 
 
 ###########################Links##########################:

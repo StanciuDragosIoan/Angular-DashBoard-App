@@ -7,6 +7,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { StickiesComponent } from './components/stickies/stickies.component';
+import { StickyItemComponent } from './components/sticky-item/sticky-item.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { StickiesComponent } from './components/stickies/stickies.component';
     AppComponent,
     DashboardComponent,
     TasksComponent,
-    StickiesComponent 
+    StickiesComponent,
+    StickyItemComponent 
   ],
   imports: [
     BrowserModule,
