@@ -1,3 +1,18 @@
-<p id="stickies">
-  stickies works!
-</p>
+ 
+ 
+<!-- <div class="row mr-5">
+    <div *ngFor="let sticky of stickies" class="bg-warning p-2 col-sm-12 col-md-6 col-lg-4 stickies-container">
+        <div class="bg-light">{{ sticky.title }}</div>  <div class=" bg-info">{{ sticky.body }}</div>        
+    </div>
+</div>  -->
+<div class="row">
+      <app-sticky-item *ngFor="let sticky of stickies" class="m-3" [sticky]="sticky">
+      </app-sticky-item>
+</div>
+
+ 
+   
+
+
+
+ 

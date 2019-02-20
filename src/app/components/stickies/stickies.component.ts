@@ -14,10 +14,25 @@ export class StickiesComponent implements OnInit {
     this.stickies = [
       {
         id:1,
-        title: 'Test Sticky',
-        body: 'Test sticky body...',
+        title: 'Test Sticky 1',
+        body: 'Test sticky 1 body...',
         completed: false
-      } 
+      },
+
+      {
+        id:2,
+        title: 'Test Sticky 2',
+        body: 'Test sticky 2 body...',
+        completed: true
+      },
+
+      {
+        id:3,
+        title: 'Test Sticky 3',
+        body: 'Test sticky 3 body...',
+        completed: false
+      }  
+     
     ]
   }
 

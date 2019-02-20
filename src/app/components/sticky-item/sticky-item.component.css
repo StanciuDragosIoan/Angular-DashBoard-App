@@ -1,0 +1,42 @@
+.card-header,
+.card-body{
+    min-width:20rem;
+    background-color: #ffff99;
+}
+
+.card-body:hover, .card-header:hover{
+    cursor:pointer;
+}
+
+.delete{
+    width:2rem;
+    height:2rem;
+    margin-left:95%;
+    margin-top:-2rem;
+    border-radius:50%;
+    padding:4px 12px;
+    color:#fff;
+}
+ 
+
+
+@media(max-width: 500px){
+    .card-header,
+    .card-body{
+       min-width: 16rem ;
+    }
+}
+
+@media(max-width: 420px){
+    .card-header,
+    .card-body{
+       min-width: 10rem ;  
+    }
+}
+
+@media(max-width: 340px){
+    .card-header,
+    .card-body{
+       width:2rem;
+    }
+}
