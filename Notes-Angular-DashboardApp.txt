@@ -213,6 +213,8 @@ git pull origin master
 git merge test
 git push origin master
 
+####### How to check the remote origin of the local repo#####
+git remote show origin
 
 ######simple git flow####
 
